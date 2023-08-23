@@ -1,0 +1,689 @@
+/**********************************************************
+  Add Google Fonts
+**********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,400;1,300;1,400');
+
+
+/**********************************************************
+  Reset Default Properties Start
+**********************************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.288) inset;
+    background-color: var(--white);
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 7rem;
+}
+
+html {
+    font-size: 62.5%;
+    /* Now 1rem = 1em = 10px */
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/**********************************************************
+  Reset Default Properties End
+**********************************************************/
+
+
+/**********************************************************
+  Variables Start
+**********************************************************/
+:root {
+
+    /* Theme Colors */
+    --black: #000;
+    --white: #fff;
+    --yellow: #fdde45;
+    --green: #28c466;
+    --carrotColor: #ec6658;
+    --grey: grey;
+
+
+    /* Theme Fonts */
+    --font-family-1: 'Lato', sans-serif;
+    --font-family-2: 'Poppins', sans-serif;
+}
+
+/**********************************************************
+  Variables End
+**********************************************************/
+
+
+
+/**********************************************************
+  Common Properties to Frequently Used Elements Start
+**********************************************************/
+body {
+
+    /* This Property Will be Inherited By All the Elemnts */
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--font-family-2);
+    transition: all .3s linear;
+}
+
+li {
+    list-style-type: none;
+    font-family: var(--font-family-2);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    font-family: var(--font-family-2);
+    transition: all .3s linear;
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+img {
+    display: inline-block;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-1);
+
+}
+
+p {
+    font-family: var(--font-family-2);
+    line-height: 22px;
+}
+
+span {
+    font-family: var(--font-family-2);
+}
+
+/**********************************************************
+    Common Properties to Frequently Used Elements End
+**********************************************************/
+
+
+/**********************************************************
+   Frequently Used Components In This Website Start
+**********************************************************/
+.section-header {
+    padding-block: 5rem;
+    text-align: center;
+}
+
+/* .section-header hr {
+    width: 30%;
+    float: left;
+    border: none;
+    height: 1px;
+    background-color: var(--grey);
+    margin-top: 2rem;
+} */
+
+/* .section-header h1 {
+    width: 40%;
+    padding-inline: 1.5%;
+    float: left;
+    font-size: 3rem;
+    letter-spacing: 1.7px;
+    text-align: center;
+    position: relative;
+} */
+
+.section-header h1 {
+    font-size: 3rem;
+    letter-spacing: 1.7px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h1::before,
+.section-header h1::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-header h1::before {
+    left: -110%;
+}
+
+.section-header h1::after {
+    right: -110%;
+}
+
+
+
+/**********************************************************
+   Frequently Used Components In This Website End
+**********************************************************/
+
+
+/***********************************************************************************************
+  Actual Document Styling Start
+***********************************************************************************************/
+
+
+/**********************************************************
+   Wrapper Start
+**********************************************************/
+
+.wrapper {
+    width: 100vw;
+    height: auto;
+}
+
+
+/**********************************************************
+   Header Start
+**********************************************************/
+header {
+    width: 100%;
+    height: auto;
+}
+
+/**********************************************************
+   Nav Start
+**********************************************************/
+nav {
+    background-color: var(--black);
+}
+
+nav .nav-center {
+    position: relative;
+}
+
+/**********************************************************
+   Logo
+**********************************************************/
+.logo-box {
+    float: left;
+    position: relative;
+    z-index: 6;
+}
+
+.logo-box h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+}
+
+/**********************************************************
+   Nav Links
+**********************************************************/
+.nav-links {
+    float: right;
+}
+
+.nav-links ul li {
+    float: left;
+}
+
+.nav-links ul li a {
+    padding: 1.8rem 2.2rem;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: .3px;
+}
+
+@media (hover:hover) {
+
+    .nav-links ul li:first-child a,
+    .nav-links ul li a:hover {
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+}
+
+
+/**********************************************************
+   Mobile Toggle Button
+**********************************************************/
+.mobile-toggle-btn {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    margin-top: .3rem;
+    color: var(--white);
+    font-size: 2.8rem;
+    display: none;
+}
+
+/**********************************************************
+  Nav End
+**********************************************************/
+
+/**********************************************************
+   Banner Section Start
+**********************************************************/
+#hero-section {
+    width: 100%;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.091), rgba(255, 255, 255, 0.091)), url("../Assets/Images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#hero-section .hero-overlay {
+    width: inherit;
+    min-height: inherit;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-overlay h1 {
+    font-size: 4rem;
+    letter-spacing: 1.3px;
+    margin-bottom: .8rem;
+    color: var(--black);
+}
+
+.hero-overlay h2 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.4rem;
+}
+
+.hero-overlay p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 1000px;
+    margin-bottom: 2.4rem;
+}
+
+
+.hero-overlay button {
+    padding: 1.5rem 3rem;
+    background-color: var(--black);
+    color: var(--yellow);
+    font-size: 1.4rem;
+}
+
+@media (hover:hover) {
+
+    .hero-overlay button:hover {
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+
+}
+
+/**********************************************************
+   Banner Section End
+**********************************************************/
+
+
+/**********************************************************
+   Header End
+**********************************************************/
+
+
+
+/**********************************************************
+   Form Cards Section Start
+**********************************************************/
+
+#form-cards-section {
+    background-color: rgba(230, 230, 230);
+}
+
+.form-cards-center {
+    position: relative;
+    top: -6rem;
+}
+
+/**********************************************************
+   Form Card
+**********************************************************/
+.form-card {
+    text-align: center;
+    width: 30%;
+    height: 50rem;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    background-color: var(--white);
+    margin-inline: calc((100% - (3 * 30%))/6);
+}
+
+
+/**********************************************************
+   Form Card header
+**********************************************************/
+.form-card .form-card-header {
+    height: 15%;
+    cursor: pointer;
+}
+
+.form-card .form-card-header h4 {
+    width: 50%;
+    height: 100%;
+    line-height: calc(15 / 100 * 50rem);
+    float: left;
+    color: var(--black);
+    font-size: 1.5rem;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+
+.form-card .form-card-header h4:last-child {
+    background-color: var(--yellow);
+}
+
+
+@media (hover:hover) {
+
+    .form-card .form-card-header h4:first-child:hover,
+    .form-card .form-card-header h4:last-child:hover {
+        background-color: var(--black);
+        color: var(--yellow);
+    }
+
+}
+
+/**********************************************************
+   Form Card Form
+**********************************************************/
+.form-card form {
+    padding-block: 4.5rem;
+    height: 70%;
+}
+
+.form-card form input {
+    width: 80%;
+    padding: .8rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    border: 2px solid var(--grey);
+    border-radius: .5rem;
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+/**********************************************************
+   Form Card Footer
+**********************************************************/
+.form-card .form-card-footer {
+    background-color: var(--yellow);
+    height: 15%;
+}
+
+
+.form-card .form-card-footer button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.2rem 2.4rem;
+    color: var(--black);
+    background-color: #fff8d775;
+    font-size: 1.4rem;
+}
+
+@media (hover:hover) {
+    .form-card .form-card-footer button:hover {
+        color: var(--yellow);
+        background-color: var(--black);
+    }
+}
+
+/**********************************************************
+   Form Card Image
+**********************************************************/
+.form-card img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.form-card:nth-child(2) .form-card-footer {
+    background-color: var(--green);
+    margin-top: -3px;
+}
+
+.form-card:nth-child(3) .form-card-footer {
+    background-color: var(--carrotColor);
+    margin-top: -3px;
+}
+
+.form-card .form-card-footer span {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 100%;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: calc(15 / 100 * 50rem);
+    cursor: pointer;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+
+@media (hover:hover) {
+    .form-card .form-card-footer span:hover {
+        color: var(--black);
+        background-color: var(--white);
+    }
+}
+
+/**********************************************************
+   Form Cards Section End
+**********************************************************/
+
+
+/**********************************************************
+   Popular Places Section Start
+**********************************************************/
+#popular-places-section {
+    background-color: rgba(230, 230, 230);
+}
+
+/**********************************************************
+   Popular Places Card
+**********************************************************/
+.popular-places-card {
+    width: 23%;
+    float: left;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.365);
+    background-color: var(--white);
+    margin-inline: calc((100% - (4 * 23%))/8);
+}
+
+.popular-places-card img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+/**********************************************************
+   Popular Places Card Content
+**********************************************************/
+.popular-places-card .popular-places-card-content {
+    padding: 1.5rem;
+}
+
+.popular-places-card .popular-places-card-content h6 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.popular-places-card .popular-places-card-content span {
+    font-size: 1.1rem;
+    color: var(--grey);
+}
+
+/**********************************************************
+   Popular Places Card Footer
+**********************************************************/
+.popular-places-card-footer {
+    height: 6rem;
+    border-top: 1px solid var(--black);
+    text-align: center;
+    cursor: pointer;
+}
+
+.popular-places-card-footer .popular-places-icon {
+    width: 20%;
+    height: 100%;
+    float: left;
+    line-height: 6rem;
+    font-size: 2rem;
+    transition: all .3s linear;
+}
+
+.popular-places-card-footer .travel {
+    width: 60%;
+    height: 100%;
+    float: left;
+    line-height: 6rem;
+    font-size: 1.5rem;
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    font-weight: 600;
+    background-color: transparent;
+    transition: all .3s linear;
+}
+
+@media (hover:hover) {
+
+    .popular-places-card-footer .travel:hover,
+    .popular-places-card-footer .popular-places-icon:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+
+/**********************************************************
+   Popular Places Section Paragraph
+**********************************************************/
+.popular-places-para p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 5rem 0 3rem;
+}
+
+/**********************************************************
+   Popular Places Section End
+**********************************************************/
+
+
+
+/**********************************************************
+   Popular Packages Section Start
+**********************************************************/
+
+
+/**********************************************************
+   Popular Packages Card
+**********************************************************/
+.popular-packages-card {
+    width: 47%;
+    height: 25rem;
+    float: left;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.365);
+    background-color: var(--white);
+    margin: calc((100% - 2 * 47%)/4);
+}
+
+.popular-packages-card img {
+    width: 45%;
+    float: left;
+    object-fit: cover;
+    height: 100%;
+}
+
+.popular-packages-card .popular-packages-card-content {
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.popular-packages-card-content .popular-packages-text {
+    padding: 2rem;
+    height: calc(100% - 6rem);
+}
+
+.popular-packages-card-content .popular-packages-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.popular-packages-card-content .popular-packages-text p {
+    font-size: 1.2rem;
+}
+
+/**********************************************************
+   Popular Packages Section End
+**********************************************************/
+
+
+/**********************************************************
+   Footer Start
+**********************************************************/
+footer {
+    padding: 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+}
+
+/**********************************************************
+   Footer End
+**********************************************************/
+
+
+
+/***********************************************************************************************
+  Actual Document Styling End
+***********************************************************************************************/
