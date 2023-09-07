@@ -1,9 +1,9 @@
-# tour and travels website
+# tour-and-travels-agency
 
 
 ## Description
 
-Welcome to the **tour and travels website** your online destination for discovering and exploring exciting travel destinations, tips, and inspiration. This static website is designed to provide you with a glimpse of the wonderful world of travel, from breathtaking landscapes to cultural experiences and adventure stories.
+Welcome to the **tour and travels agency** your online destination for discovering and exploring exciting travel destinations, tips, and inspiration. This static website is designed to provide you with a glimpse of the wonderful world of travel, from breathtaking landscapes to cultural experiences and adventure stories.
 
 ## Features
 
@@ -23,4 +23,4 @@ To access the website, simply visit (https://tourandtravelsagency.netlify.app) i
 
 ---
 
-Thank you for visiting **tour and travels website** the We hope you find inspiration and valuable travel information on our static website. Enjoy your virtual travels!
+Thank you for visiting **tour and travels agency** the We hope you find inspiration and valuable travel information on our static website. Enjoy your virtual travels!
