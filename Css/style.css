@@ -301,7 +301,7 @@ nav .nav-center {
 #hero-section {
     width: 100%;
     min-height: 90vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.091), rgba(255, 255, 255, 0.091)), url("../Assets/Images/hero-image.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.091), rgba(255, 255, 255, 0.091)), url("../assets/images/hero-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
