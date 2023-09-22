@@ -1,26 +1,29 @@
 # tour-and-travels-agency
 
+This is a fully responsive static website for a tour and travels agency created using HTML, CSS and JavaScript. The website showcases the various services and packages offered by the agency. 
 
-## Description
-
-Welcome to the **tour and travels agency** your online destination for discovering and exploring exciting travel destinations, tips, and inspiration. This static website is designed to provide you with a glimpse of the wonderful world of travel, from breathtaking landscapes to cultural experiences and adventure stories.
 
 ## Features
 
-- **Inspiring Travel Content:** Dive into a collection of travel articles, destination guides, and captivating photography.
+- Responsive design that adapts to different screen sizes and devices
+- Modern and attractive user interface with animations and transitions
+- SEO-friendly HTML structure and meta tags
 
-- **Traveler's Blog:** Read captivating travel stories and insights from fellow travelers around the world.
+## Installation
 
-- **User-Friendly:** Our website offers a simple and intuitive user interface for easy navigation.
+To run this website locally, you need to have a web server installed on your machine. You can use any web server of your choice, such as Apache, Nginx, or XAMPP. Alternatively, you can use a live server extension for your code editor, such as VS Code or Atom.
+
+To install this website, follow these steps:
+
+- Clone this repo to your local machine using `git clone https://github.com/webwithaman/tour-and-travels-agency.git`
+- Navigate to the project folder using `cd tour-and-travels-website`
+- Open the `index.html` file in your browser or start your web server
+- Enjoy!
 
 ## Demo
 
-Explore our website at (https://tourandtravelsagency.netlify.app) to start your virtual journey.
+You can view a live demo of this website here: https://tourandtravelsagency.netlify.app
 
-## Getting Started
+## License
 
-To access the website, simply visit (https://tourandtravelsagency.netlify.app) in your web browser. There are no additional steps required for installation or setup since it's a static website.
-
----
-
-Thank you for visiting **tour and travels agency** the We hope you find inspiration and valuable travel information on our static website. Enjoy your virtual travels!
+This project is licensed under the MIT License.
